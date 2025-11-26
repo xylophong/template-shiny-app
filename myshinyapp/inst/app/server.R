@@ -35,7 +35,7 @@ server <- function(input, output) {
     proxy <- leaflet::leafletProxy("map")
     proxy <- leaflet::clearMarkers(proxy)
     if (nrow(data()) > 0) {
-    proxy <- leaflet::addMarkers(proxy, data=data(), ~long, ~lat, label = ~mag)  
+    proxy <- leaflet::addMarkers(proxy, data=data(), ~longitude, ~latitude, label = ~mag)  
     }
     })
 }
