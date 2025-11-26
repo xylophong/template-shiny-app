@@ -36,7 +36,7 @@ jobs:
         id: docker_meta
         uses: docker/metadata-action@v3
         with:
-          images: inseefrlab/shiny-app-template
+          images: deepphong/shiny-app-template
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
       - name: Set up Docker Buildx
